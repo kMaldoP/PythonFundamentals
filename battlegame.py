@@ -12,12 +12,12 @@ dragon_damage = 50
 orc = "orc"
 orc_hp = 125
 orc_damage = 115
-your_mom = "your mom"
-your_mom_hp = 125
-your_mom_damage = 75
+mom = "mom"
+mom_hp = 125
+mom_damage = 75
 
 while True:
-    print(" 1) wizard \n 2) elf \n 3) human \n 4) orc ")
+    print(" 1) wizard \n 2) elf \n 3) human \n 4) orc \n 5) Mom")
     character = input("Choose your character: ".lower())
     if character == "1" or character == "wizard":
         character = wizard
@@ -39,17 +39,22 @@ while True:
         my_hp = orc_hp
         my_damage = orc_damage
         break
+    elif character == "5" or character == "mom":
+        character = mom
+        my_hp = mom_hp
+        my_damage = mom_damage
+        break
     print("Unkown Character")
 print(f" You have chosen the character: {character} \n HP: {my_hp}\n Damage: {my_damage} ")
 
 while True:
     dragon_hp -= my_damage
-    print(f"The {character} damaged the dragon! \n The dragons health is {dragon_hp} ")
+    print(f"Your {character} damaged the dragon! \n The dragons health is {dragon_hp} ")
     if dragon_hp <= 0:
         print("The Dragon has lost the battle!")
         break
     my_hp -= dragon_damage
-    print(f"The dragon has damaged the {character} \n The {character}'s hitpoints are {my_hp} ")
+    print(f"The dragon has damaged your {character} \n your {character}'s hitpoints are {my_hp} ")
     if my_hp <= 0:
-        print(f"The {character} has lost the battle!")
+        print(f"Your {character} has lost the battle!")
         break
