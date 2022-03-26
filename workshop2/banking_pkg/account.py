@@ -2,13 +2,13 @@ def show_balance(balance):
     print(f"Current Balance: ${balance}")
 
 
-def deposit(balance):
+def deposit(balance): #entering amount to deposit
     amount = float(input("Enter Amount To Deposit: "))
     balance += amount
     return balance
 
 
-def withdraw(balance):
+def withdraw(balance): #entering amount to withdraw
     amount = float(input("Enter Amount To Withdraw: "))
     if(balance < amount):
         print(" You do not have enough money")
@@ -17,10 +17,10 @@ def withdraw(balance):
 
 
 def logout(name):
-    print(f"Goodbye: {name}")
+    print(f"Goodbye {name}")
 
 
-def validate_length():
+def validate_length(): #Validate registered password length
     while True:
         name = input("Enter Name to register: ")
         if len(name) in range(1, 10):
@@ -29,7 +29,7 @@ def validate_length():
             print("name cannont be longer than 10 characters")
 
 
-def validate_pin():
+def validate_pin(): #Validate pin
     while True:
         pin = input("Enter Pin: ")
         if len(pin) == 4:
