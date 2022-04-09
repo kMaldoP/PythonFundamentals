@@ -29,7 +29,7 @@ class BankUser(User):
         self.balance = 0
 
     def show_balance(self):
-        print(f" Your balance is: {self.balance}")
+        print(f" Your Account balance is: {self.balance}")
 
     def withdraw(self):
         amount = float(input("How much chedda do you need?"))
@@ -69,3 +69,7 @@ class BankUser(User):
 
 user1 = BankUser('bob', 1234, 'test')
 user2 = BankUser('alice', 1234, 'test')
+
+""""
+code was tested using the python interactive terminal and dot notation. I believe it all to be functioning properly.
+"""

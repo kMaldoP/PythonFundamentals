@@ -18,7 +18,7 @@ def register(database, username, password):
         print("Username cannot be longer than 10 characters")
         return ""
     elif len(password) <= 4:
-        print("Password needs to be longer than 5 characters, you pnoob")
+        print("Password needs to be longer than 5 characters, you Pnoob")
         return ""
     else:
         print("Username has been registered")

@@ -4,7 +4,9 @@ from donations_pkg.user import *
 database = {"admin":"password123"}
 donations = []
 authorized_user = ""
+
 show_homepage()
+
 if authorized_user == "":
     print("You must be logged in to donate.")
 else:

@@ -13,7 +13,7 @@ def show_homepage():
 
 def donate(username):
     global total_donations
-    donation_amount = float(input("Enter amount to donate"))
+    donation_amount = float(input("Enter amount to donate:  $"))
     total_donations += donation_amount
     donation = (f"{username} donated ${donation_amount}")
     print("Thank you for your donation")
@@ -28,4 +28,4 @@ def show_donations(donations):
     else:
         for d in donations:
             print(d)
-        print(f" Total Donations ${total_donations}")
+        print(f"Total Donations ${total_donations}")
